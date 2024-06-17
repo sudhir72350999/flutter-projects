@@ -38,23 +38,80 @@ class _MyHomePageState extends State<MyHomePage> {
           backgroundColor: Theme.of(context).colorScheme.inversePrimary,
           title: Text("Flutter App"),
         ),
-        body: InkWell(
-          onTap: (){
-            print("onTap: ");
-          },
-          onDoubleTap: (){
-            print("onDoubleTap: ");
-          },
-          onLongPress: (){
-            print("onLongPress: ");
-          },
-          child: Center(
-            child: Container(
-              height: 200,
-              width: 200,
-              color: Colors.cyan,
-              child: Text("Flutter App"),
-            ),
+        body: SingleChildScrollView(
+          child: Column(
+            children: [
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Container(
+                  width: 200,
+                  height: 200,
+                  color: Colors.cyan,
+                  child: Text("Flutter App"),
+                ),
+              ),
+              Container(
+                width: 200,
+                height: 200,
+                color: Colors.grey,
+                child: Text("Flutter App"),
+              ),
+              Container(
+                width: 200,
+                height: 200,
+                color: Colors.cyan,
+                child: Text("Flutter App"),
+              ),
+              Container(
+                width: 200,
+                height: 200,
+                color: Colors.green,
+                child: Text("Flutter App"),
+              ),
+              Container(
+                width: 200,
+                height: 200,
+                color: Colors.cyan,
+                child: Text("Flutter App"),
+              ),
+              SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: Row(
+                  children: [
+                    Container(
+                      width: 200,
+                      height: 200,
+                      color: Colors.green,
+                      child: Text("Flutter App"),
+                    ),
+                    Container(
+                      width: 200,
+                      height: 200,
+                      color: Colors.brown,
+                      child: Text("Flutter App"),
+                    ),
+                    Container(
+                      width: 200,
+                      height: 200,
+                      color: Colors.green,
+                      child: Text("Flutter App"),
+                    ),
+                    Container(
+                      width: 200,
+                      height: 200,
+                      color: Colors.yellow,
+                      child: Text("Flutter App"),
+                    ),
+                    Container(
+                      width: 200,
+                      height: 200,
+                      color: Colors.green,
+                      child: Text("Flutter App"),
+                    ),
+                  ],
+                ),
+              ),
+            ],
           ),
         )
         ,
